@@ -1,0 +1,245 @@
+name: "开源之夏 2026 项目提交 (中英双语 / English)"
+description: "使用中英双语或英文提交项目信息。 / Submit a project in Chinese and English, or English only."
+title: "Project: "
+labels: ["Community: OSPP"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        本模板用于支持中英双语或仅英文报名的项目。中英双语项目须填写全部中英文内容；仅英文项目请在中文填写区填写 `N/A`。
+
+        This form is for projects accepting applications in both Chinese and English, or in English only. Bilingual projects must provide both versions; English-only projects should enter `N/A` in fields requesting Chinese content.
+
+        领航模式项目还须填写关联方向、学生邮箱及 Pitch 凭证。
+
+        Pilot projects must also provide the related track, the student's email address, and Pitch credentials.
+
+        ---
+
+  - type: dropdown
+    id: registration_language
+    attributes:
+      label: 项目支持报名语言 / Application Language
+      description: 请选择项目接受学生报名时使用的语言。 / Select the language accepted for student applications.
+      options:
+        - 中英双语 / Chinese and English
+        - 仅英文 / English only
+    validations:
+      required: true
+
+  - type: dropdown
+    id: project_type
+    attributes:
+      label: 项目类型 / Project Type
+      description: 请选择本次提交的项目类型。 / Select the project type.
+      options:
+        - 经典模式项目 / Classic Project
+        - 领航模式项目 / Pilot Project
+    validations:
+      required: true
+
+  - type: input
+    id: project_name_zh
+    attributes:
+      label: 项目名称 (中文)
+      description: 名称应清晰体现技术和目标任务，不使用逗号等断句；仅英文项目填写 N/A。
+      placeholder: 例如：面向 RISC-V64 的 xxx
+    validations:
+      required: true
+
+  - type: input
+    id: project_name_en
+    attributes:
+      label: Project Name (English)
+      description: Use a concise name that clearly describes the technology and objective.
+      placeholder: For example, xxx for RISC-V64
+    validations:
+      required: true
+
+  - type: textarea
+    id: mentors
+    attributes:
+      label: 项目导师 / Mentors
+      description: 填写导师姓名、在 openRuyi 组织内贡献时使用的邮箱，以及导师贡献的 openRuyi 仓库地址。 / Provide each mentor's name, email used for openRuyi contributions, and an openRuyi repository URL showing those contributions.
+      placeholder: |
+        导师姓名 / Mentor Name:
+        导师邮箱 / Mentor Email:
+        导师贡献的 openRuyi 仓库地址 / openRuyi Contribution Repository URL:
+    validations:
+      required: true
+
+  - type: textarea
+    id: project_description_zh
+    attributes:
+      label: 项目描述 (中文)
+      description: 请说明相关背景、已有工作、现存不足、计划改进点及最终目标；仅英文项目填写 N/A。
+      placeholder: |
+        ## 相关背景
+
+        ## 已有工作
+
+        ## 存在的不足
+
+        ## 希望改进的点
+
+        ## 最终项目实现的目标
+    validations:
+      required: true
+
+  - type: textarea
+    id: project_description_en
+    attributes:
+      label: Project Description (English)
+      description: Describe the background, existing work, current limitations, planned improvements, and final objectives.
+      placeholder: |
+        ## Background
+
+        ## Existing Work
+
+        ## Current Limitations
+
+        ## Planned Improvements
+
+        ## Final Objectives
+    validations:
+      required: true
+
+  - type: textarea
+    id: project_notes_zh
+    attributes:
+      label: 项目备注 (中文)
+      description: 填写其他需要说明的事项；无内容填写“无”，仅英文项目填写 N/A。
+    validations:
+      required: true
+
+  - type: textarea
+    id: project_notes_en
+    attributes:
+      label: Project Notes (English)
+      description: Provide any additional information, or enter None if there is nothing to add.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: 项目综合难度 / Difficulty
+      description: 经典模式项目选择“基础”或“进阶”；“挑战”仅适用于领航模式项目。 / Classic projects must select Basic or Advanced; Challenge is only available for pilot projects.
+      options:
+        - 基础 / Basic
+        - 进阶 / Advanced
+        - 挑战 / Challenge
+    validations:
+      required: true
+
+  - type: dropdown
+    id: development_cycle
+    attributes:
+      label: 开发周期 / Development Cycle
+      options:
+        - 2 个月 / 2 months
+        - 3 个月 / 3 months
+        - 4 个月 / 4 months
+    validations:
+      required: true
+
+  - type: dropdown
+    id: technical_domains
+    attributes:
+      label: 技术领域标签 / Technical Domains
+      description: 可选择一个或多个技术领域。 / Select one or more technical domains.
+      multiple: true
+      options:
+        - 开源芯片 / Open-source Chips
+        - 应用软件开发 / Application Development
+        - 大数据与人工智能 / Big Data and Artificial Intelligence
+        - 开发和运维 / Development and Operations
+        - 分布式系统 / Distributed Systems
+        - 操作系统与基础软件 / Operating Systems and Infrastructure Software
+        - 网络与安全 / Networking and Security
+        - 编程语言 / Programming Languages
+    validations:
+      required: true
+
+  - type: input
+    id: programming_languages
+    attributes:
+      label: 编程语言标签 / Programming Languages
+      description: 请用英文逗号分隔多个语言。 / Separate multiple languages with commas.
+      placeholder: C, C++, Rust
+    validations:
+      required: true
+
+  - type: textarea
+    id: deliverables_zh
+    attributes:
+      label: 项目产出要求 (中文)
+      description: 明确学生需完成的工作和预期效果；每项建议控制在 30 字以内。仅英文项目填写 N/A。
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: deliverables_en
+    attributes:
+      label: Project Deliverables (English)
+      description: Specify the required work and expected results. Keep each item concise.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical_requirements_zh
+    attributes:
+      label: 项目技术要求 (中文)
+      description: 从编程语言、技术栈和开发经验描述要求；每项建议控制在 30 字以内。仅英文项目填写 N/A。
+      placeholder: |
+        1. 熟悉……
+        2. 掌握……
+        3. 了解……
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical_requirements_en
+    attributes:
+      label: Technical Requirements (English)
+      description: Describe the required programming languages, technology stack, and development experience. Keep each item concise.
+      placeholder: |
+        1. Familiar with ...
+        2. Proficient in ...
+        3. Knowledge of ...
+    validations:
+      required: true
+
+  - type: input
+    id: output_repository
+    attributes:
+      label: 项目成果仓库 / Output Repository (PR Target)
+      description: 填写已有仓库的完整 URL；多个仓库请用英文逗号分隔，勿填写其他内容。 / Enter complete repository URLs separated by commas, with no additional text.
+      placeholder: https://github.com/openRuyi-Project/ospp
+    validations:
+      required: true
+
+  - type: input
+    id: repository_license
+    attributes:
+      label: 项目成果仓库开源协议 / Repository License
+      description: 填写成果仓库使用的开源协议。 / Enter the open-source license used by the repository.
+      placeholder: Apache-2.0
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: 提交确认 / Confirmation
+      options:
+        - label: 我确认所填信息完整准确，并已按所选报名语言填写对应内容。 / I confirm that the information is complete and accurate and matches the selected application language.
+          required: true

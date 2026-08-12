@@ -1,0 +1,169 @@
+name: "开源之夏 2026 项目提交 (仅中文)"
+description: "使用中文提交开源之夏 2026 项目信息。"
+title: "项目名称"
+labels: ["Community: OSPP"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        本模板仅用于支持中文报名的项目。请完整填写项目资料。领航模式项目须填写关联方向、学生邮箱及 Pitch 凭证。
+
+
+        ---
+  - type: dropdown
+    id: project_type
+    attributes:
+      label: 项目类型
+      description: 请选择本次提交的项目类型。
+      options:
+        - 经典模式项目
+        - 领航模式项目
+    validations:
+      required: true
+
+  - type: input
+    id: project_name
+    attributes:
+      label: 项目名称
+      description: 名称应清晰体现技术和目标任务，不使用逗号等断句。
+      placeholder: 例如：面向 RISC-V64 的 xxx
+    validations:
+      required: true
+
+  - type: textarea
+    id: mentors
+    attributes:
+      label: 项目导师
+      description: 填写导师姓名、在 openRuyi 组织内贡献时使用的邮箱，以及导师贡献的 openRuyi 仓库地址。
+      placeholder: |
+        导师姓名:
+        导师邮箱:
+        导师贡献的 openRuyi 仓库地址:
+    validations:
+      required: true
+
+  - type: textarea
+    id: project_description
+    attributes:
+      label: 项目描述
+      description: 请说明相关背景、已有工作、现存不足、计划改进点及最终目标。
+      placeholder: |
+        ## 相关背景
+
+        ## 已有工作
+
+        ## 存在的不足
+
+        ## 希望改进的点
+
+        ## 最终项目实现的目标
+    validations:
+      required: true
+
+  - type: textarea
+    id: project_notes
+    attributes:
+      label: 项目备注
+      description: 填写其他需要说明的事项；无内容请填写“无”。
+    validations:
+      required: true
+
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: 项目综合难度
+      description: 经典模式和组织支持项目选择“基础”或“进阶”；“挑战”仅适用于领航模式项目。
+      options:
+        - 基础
+        - 进阶
+        - 挑战
+    validations:
+      required: true
+
+  - type: dropdown
+    id: development_cycle
+    attributes:
+      label: 开发周期
+      options:
+        - 2个月
+        - 3个月
+        - 4个月
+    validations:
+      required: true
+
+  - type: dropdown
+    id: technical_domains
+    attributes:
+      label: 技术领域标签
+      description: 可选择一个或多个技术领域。
+      multiple: true
+      options:
+        - 开源芯片
+        - 应用软件开发
+        - 大数据与人工智能
+        - 开发和运维
+        - 分布式系统
+        - 操作系统与基础软件
+        - 网络与安全
+        - 编程语言
+    validations:
+      required: true
+
+  - type: input
+    id: programming_languages
+    attributes:
+      label: 编程语言标签
+      description: 请用英文逗号分隔多个语言。
+      placeholder: C, C++, Rust
+    validations:
+      required: true
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: 项目产出要求
+      description: 明确学生需完成的工作和预期效果；每项建议控制在 30 字以内。
+      placeholder: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical_requirements
+    attributes:
+      label: 项目技术要求
+      description: 从编程语言、技术栈和开发经验描述要求。每项建议控制在 30 字以内。
+      placeholder: |
+        1. 熟悉……
+        2. 掌握……
+        3. 了解……
+    validations:
+      required: true
+
+  - type: input
+    id: output_repository
+    attributes:
+      label: 项目成果仓库 (PR 提交地址)
+      description: 填写组织已有仓库的完整 URL；多个仓库请用英文逗号分隔，勿填写 URL 以外的内容。
+      placeholder: https://github.com/openRuyi-Project/ospp
+    validations:
+      required: true
+
+  - type: input
+    id: repository_license
+    attributes:
+      label: 项目成果仓库开源协议
+      description: 填写成果仓库使用的开源协议。
+      placeholder: Apache-2.0
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: 提交确认
+      options:
+        - label: 我确认所填信息完整准确，并已按所选项目类型填写对应内容。
+          required: true
