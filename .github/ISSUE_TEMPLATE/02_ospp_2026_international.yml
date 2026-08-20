@@ -162,6 +162,15 @@ body:
       required: true
 
   - type: input
+    id: secondary_technical_domain_tags
+    attributes:
+      label: 二级技术领域标签 / Secondary Technical Domain Tags
+      description: 请填写与所选技术领域对应的二级标签，多个标签请用英文逗号分隔。 / Enter the secondary tags corresponding to the selected technical domains. Separate multiple tags with commas.
+      placeholder: React, PyTorch, Linux
+    validations:
+      required: true
+
+  - type: input
     id: programming_languages
     attributes:
       label: 编程语言标签 / Programming Languages
