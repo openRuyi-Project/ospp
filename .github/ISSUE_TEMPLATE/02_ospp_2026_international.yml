@@ -72,17 +72,9 @@ body:
     id: project_description_zh
     attributes:
       label: 项目描述 (中文)
-      description: 请说明相关背景、已有工作、现存不足、计划改进点及最终目标；仅英文项目填写 N/A。
+      description: 请围绕相关背景、已有工作、存在的不足、希望改进的点以及最终项目实现的目标进行说明，并用一段逻辑连贯的文字完整表述，不要分别设置小节；仅英文项目填写 N/A。
       placeholder: |
-        ## 相关背景
-
-        ## 已有工作
-
-        ## 存在的不足
-
-        ## 希望改进的点
-
-        ## 最终项目实现的目标
+        请在此填写完整的项目描述
     validations:
       required: true
 
@@ -90,17 +82,9 @@ body:
     id: project_description_en
     attributes:
       label: Project Description (English)
-      description: Describe the background, existing work, current limitations, planned improvements, and final objectives.
+      description: Describe the background, existing work, current limitations, planned improvements, and final objectives in one coherent description rather than separate sections.
       placeholder: |
-        ## Background
-
-        ## Existing Work
-
-        ## Current Limitations
-
-        ## Planned Improvements
-
-        ## Final Objectives
+        Please provide a complete project description here
     validations:
       required: true
 
