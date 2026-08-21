@@ -46,17 +46,9 @@ body:
     id: project_description
     attributes:
       label: 项目描述
-      description: 请说明相关背景、已有工作、现存不足、计划改进点及最终目标。
+      description: 请围绕相关背景、已有工作、存在的不足、希望改进的点以及最终项目实现的目标进行说明，并用一段逻辑连贯的文字完整表述，不要分别设置小节。
       placeholder: |
-        ## 相关背景
-
-        ## 已有工作
-
-        ## 存在的不足
-
-        ## 希望改进的点
-
-        ## 最终项目实现的目标
+        请在此填写完整的项目描述
     validations:
       required: true
 
