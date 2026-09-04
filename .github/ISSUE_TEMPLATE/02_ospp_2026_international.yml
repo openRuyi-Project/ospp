@@ -12,7 +12,7 @@ body:
 
         领航模式项目还须填写关联方向、学生邮箱及 Pitch 凭证。
 
-        Pilot projects must also provide the related track, the student's email address, and Pitch credentials.
+        Pioneer Program must also provide the related track, the student's email address, and Pitch credentials.
 
         ---
 
@@ -33,8 +33,8 @@ body:
       label: 项目类型 / Project Type
       description: 请选择本次提交的项目类型。 / Select the project type.
       options:
-        - 经典模式项目 / Classic Project
-        - 领航模式项目 / Pilot Project
+        - 经典模式项目 / Classic Track
+        - 领航模式项目 / Pioneer Program
     validations:
       required: true
 
@@ -108,7 +108,7 @@ body:
     id: difficulty
     attributes:
       label: 项目综合难度 / Difficulty
-      description: 经典模式项目选择“基础”或“进阶”；“挑战”仅适用于领航模式项目。 / Classic projects must select Basic or Advanced; Challenge is only available for pilot projects.
+      description: 经典模式项目选择“基础”或“进阶”；“挑战”仅适用于领航模式项目。 / Classic Track must select Basic or Advanced; Challenge is only available for Pioneer Program.
       options:
         - 基础 / Basic
         - 进阶 / Advanced
