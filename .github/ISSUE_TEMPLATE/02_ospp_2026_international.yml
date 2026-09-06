@@ -154,6 +154,75 @@ body:
     validations:
       required: true
 
+  - type: markdown
+    attributes:
+      value: |
+        请展开所选技术领域查看可选的二级标签。 / Expand the selected technical domains to view available secondary tags.
+        <details>
+        <summary>开源芯片 / Open-source Chips</summary>
+        Chip Design/Verification
+        </details>
+
+        <details>
+        <summary>应用软件开发 / Application Development</summary>
+        Adobe XD, Alamofire, Android Jetpack, AndroidX, Angular, Apache, ASP.NET, AWS Mobile Hub, Babel, Bootstrap, 
+        Code Review, Core Location, CoreData, Dapr, Desktop Application, Django, dotnetcore, Electron, Express.js, Figma, 
+        Firebase, Flutter, GraphQL, GTK, Hugo, Ionic, JavaFX, Jekyll, Laravel, Material UI, 
+        Memcached, MFC, Netflix OSS, Mobile Application, Nginx, npm, Parcel, PyQt, Qt, React, 
+        React Native, RESTful API, Retrofit, Ruby on Rails, Sass, Sketch, Spring Boot, Spring Cloud, Tkinter, UI, 
+        UIKit, UWP, UX, Vue.js, Webpack, Web Application, Windows Presentation Foundation (WPF), WinForms, Xamarin, Yarn, 
+        .NET, .Net Core
+        </details>
+
+        <details>
+        <summary>大数据与人工智能 / Big Data and Artificial Intelligence</summary>
+        AI, AlexNet, BERT, C3D, CNN, Computer Vision(CV), ConceptNet, CoreNLP, Database, Data Science, 
+        Deep Learning, Documented Database, Embedded Database, Fairseq, Faster R-CNN, Flink, GAN, GPT, GPU, GRU, 
+        Graph Database, Hadoop, Hbase, HDFS, Hive, HPC, Hugging Face Transformers, I3D, jieba, Kafka, 
+        KCF, Keras, LLM, LSTM, Matplotlib, Machine Learning, MongoDB, MOSSE, MySQL, Natural Language Processing (NLP), 
+        NLTK, Non-relational Database, NumPy, Open3D, OpenCV, OpenCL, OpenIE, OpenNMT, Pandas, PCA, 
+        PCL, PIL, Plotly, PostgreSQL, Power BI, PySceneDetect, PyTorch, Quantization, ResNet, Relational Database, 
+        Scientific Computing, Semantic Kernel, scikit-image, Scikit-learn, SciPy, Seaborn, SiamFC, SiamRPN, spaCy, Spark, 
+        SSD, Stanford NER, Structured Database, Tableau, TensorFlow, TextRank, Unstructured Database, Vector Database, VGG, VIA, 
+        WordNet, YOLO
+        </details>
+
+        <details>
+        <summary>开发和运维 / Development and Operations</summary>
+        AIOps, Appium, CD, CI, CircleCI, Cucumber, DataOps, DevOps, DevSecOps, ELK Stack, 
+        FinOps, Git, GitLab CI/CD, Grafana, Jenkins, JMeter, Junit, LLMOps, LoadRunner, MLOps, 
+        Postman, Prometheus, pytest, Selenium, SoapUI, SVN, Travis CI
+        </details>
+
+        <details>
+        <summary>分布式系统 / Distributed Systems</summary>
+        Amazon SQS, AmazonDynamoDB, Apache Mesos, AWS IoT, Azure IoT, Bitcoin, Blockchain, Cassandra, Ceph, Cloud Native, 
+        CubeFS, Distributed Storage, Docker, Docker Compose, Elasticsearch, Ethereum, Flink, GlusterFS, Google Cloud IoT, Grafana, 
+        Hadoop, Hazelcast, HDFS, IPFS (InterPlanetary File System), Kafka, Kibana, Kubernetes, Logstash, Memcached, Prometheus, 
+        Proof of Work (PoW), RabbitMQ, Redis, Self-sovereign Identity (SSI), Spark, Truffle, Web3.js, ZooKeeper
+        </details>
+
+        <details>
+        <summary>操作系统与基础软件 / Operating Systems and Infrastructure Software</summary>
+        Ansible, ARM, AVR, CentOS, Cgroups, Clang, Compiler, classic-flang, DBus, Debian, 
+        DTK, Emulation, ext4, Fedora, FreeRTOS, FUSE, GCC, GDB, GNU, KVM, 
+        Linux, LLVM, Perf, PIC, QEMU, RISC-V, RTOS, ThreadX, Ubuntu, Virtualization, 
+        Wayland, Window Manager, x86
+        </details>
+
+        <details>
+        <summary>网络与安全 / Networking and Security</summary>
+        802.1X, AES, CDMA, CDN, Cryptography, DHCP, DNS, EAP, ELKStack, FTP, 
+        GSM, HTTP, IDS/IPS, iptables, JWT, LDAP, libcurl, LTE, MQTT, Netty, 
+        OAuth, OpenIDConnect, PKI, RSA, SAML, SCP, SFTP, SIEM, Snort, Socket, 
+        SSL/TLS, Suricata, TCP/IP, tcpdump, VPN, WebSocket, Wireshark, WPA/WPA2
+        </details>
+
+        <details>
+        <summary>编程语言 / Programming Languages</summary>
+        Programming Language
+        </details>
+
   - type: input
     id: programming_languages
     attributes:
